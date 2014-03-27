@@ -1,0 +1,26 @@
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\YudianBlog.Repository.NHibernate.dll
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\YudianBlog.Repository.NHibernate.pdb
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\Iesi.Collections.dll
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\log4net.dll
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\NHibernate.dll
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\YudianBlog.Infrastructure.dll
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\YudianBlog.Model.dll
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\YudianBlog.Infrastructure.pdb
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\YudianBlog.Model.pdb
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Repository.NHibernate\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Repository.NHibernate\obj\Debug\YudianBlog.Repository.NHibernate.dll
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Repository.NHibernate\obj\Debug\YudianBlog.Repository.NHibernate.pdb
+D:\Web Project\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\YudianBlog.Repository.NHibernate.dll
+D:\Web Project\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\YudianBlog.Repository.NHibernate.pdb
+D:\Web Project\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\Iesi.Collections.dll
+D:\Web Project\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\log4net.dll
+D:\Web Project\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\NHibernate.dll
+D:\Web Project\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\YudianBlog.Infrastructure.dll
+D:\Web Project\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\YudianBlog.Model.dll
+D:\Web Project\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Web Project\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\YudianBlog.Infrastructure.pdb
+D:\Web Project\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\YudianBlog.Model.pdb
+D:\Web Project\YudianBlog\YudianBlog.Repository.NHibernate\obj\Debug\YudianBlog.Repository.NHibernate.csprojResolveAssemblyReference.cache
+D:\Web Project\YudianBlog\YudianBlog.Repository.NHibernate\obj\Debug\YudianBlog.Repository.NHibernate.dll
+D:\Web Project\YudianBlog\YudianBlog.Repository.NHibernate\obj\Debug\YudianBlog.Repository.NHibernate.pdb

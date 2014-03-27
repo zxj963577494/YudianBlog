@@ -1,0 +1,25 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false" assembly="YudianBlog.Model" namespace="YudianBlog.Model.User">
+  <class name="YudianBlog.Model.User.UserMetaInfo, YudianBlog.Model" table="yd_UserMeta">
+    <id name="UserMeta_id" column="[UserMeta_id]" type="int">
+      <generator class="native" />
+    </id>
+    <property name="Users_id" type="int">
+      <column name="[Users_id]" not-null="true"/>
+    </property>
+    <property name="UserMeta_key" type="string">
+      <column name="[UserMeta_key]" not-null="false"/>
+    </property>
+    <property name="UserMeta_value" type="string">
+      <column name="[UserMeta_value]" not-null="false"/>
+    </property>
+
+    <!--映射关联属性，column属性指定外键列名-->
+    <many-to-one name="UserInfo"
+                 class="YudianBlog.Model.User.UserInfo"
+                 fetch="select"
+                 cascade="save-update">
+      <column name="Users_id" not-null="true"/>
+    </many-to-one>
+  </class>
+</hibernate-mapping>

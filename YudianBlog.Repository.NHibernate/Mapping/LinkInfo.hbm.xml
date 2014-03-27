@@ -1,0 +1,55 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false" assembly="YudianBlog.Model" namespace="YudianBlog.Model.Link">
+	<class name="YudianBlog.Model.Link.LinkInfo, YudianBlog.Model" table="yd_Link">
+		<id name="Link_id" column="Link_id" type="int">
+			<generator class="native" />
+		</id>
+		<property name="Link_url" type="string">
+			<column name="Link_url" not-null="false"/>
+		</property>
+		<property name="Link_name" type="string">
+			<column name="Link_name" not-null="false"/>
+		</property>
+		<property name="Link_image" type="string">
+			<column name="Link_image" not-null="false"/>
+		</property>
+		<property name="Link_target" type="NHibernate.Type.EnumStringType`1[[YudianBlog.Model.Link.LinkTarget,YudianBlog.Model]], NHibernate">
+			<column name="Link_target" not-null="false"/>
+		</property>
+		<property name="Link_description" type="string">
+			<column name="Link_description" not-null="false"/>
+		</property>
+		<property name="Link_visible" type="int">
+			<column name="Link_visible" not-null="false"/>
+		</property>
+		<property name="Link_owner" type="int">
+			<column name="Link_owner" not-null="false"/>
+		</property>
+		<property name="Link_rating" type="int">
+			<column name="Link_rating" not-null="false"/>
+		</property>
+		<property name="Link_updated" type="DateTime">
+			<column name="Link_updated" not-null="false"/>
+		</property>
+		<property name="Link_rel" type="string">
+			<column name="Link_rel" not-null="false"/>
+		</property>
+		<property name="Link_notes" type="string">
+			<column name="Link_notes" not-null="false"/>
+		</property>
+		<property name="Link_rss" type="string">
+			<column name="Link_rss" not-null="false"/>
+		</property>
+
+		<!--映射集合属性，关联到持久化类-->
+		<!--table="yd_CategoryPostLink" 指定了连接表(中间表)的名字-->
+		<bag name="CategoryInfo" table="yd_CategoryPostLink" lazy="true">
+			<!--column="Object_id"指定连接表中关联当前实体类的列名-->
+			<key column="Object_id" not-null="false"/>
+			<!--column="Object_id"是连接表中关联本实体的外键-->
+			<many-to-many column="Categorys_id"
+				class="YudianBlog.Model.Category.CategoryInfo"/>
+		</bag>
+
+	</class>
+</hibernate-mapping>

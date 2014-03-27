@@ -1,0 +1,17 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false" assembly="YudianBlog.Model" namespace="YudianBlog.Model.Option">
+  <class name="YudianBlog.Model.Option.OptionInfo, YudianBlog.Model" table="yd_Option">
+    <id name="Option_id" column="Option_id" type="int">
+      <generator class="native" />
+    </id>
+    <property name="Option_name" type="string">
+      <column name="Option_name" not-null="false"/>
+    </property>
+    <property name="Option_value" type="string">
+      <column name="Option_value" not-null="false"/>
+    </property>
+    <property name="Option_autoload" type="int">
+      <column name="Option_autoload" not-null="false"/>
+    </property>
+  </class>
+</hibernate-mapping>

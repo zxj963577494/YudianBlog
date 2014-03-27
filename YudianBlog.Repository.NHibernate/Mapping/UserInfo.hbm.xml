@@ -1,0 +1,56 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="YudianBlog.Model" namespace="YudianBlog.Model.UserInfo">
+  <class name="YudianBlog.Model.User.UserInfo, YudianBlog.Model" lazy="false" table="yd_User">
+    <id name="User_id" column="[User_id]" type="Int32">
+      <generator class="native" />
+    </id>
+    <property name="User_login" type="String">
+      <column name="[User_login]" not-null="false"/>
+    </property>
+    <property name="User_nicename" type="String">
+      <column name="[User_nicename]" not-null="false"/>
+    </property>
+    <property name="User_pass" type="String">
+      <column name="[User_pass]" not-null="false"/>
+    </property>
+    <property name="User_salt" type="String">
+      <column name="[User_salt]" not-null="false"/>
+    </property>
+    <property name="User_registeredtime" type="DateTime">
+      <column name="[User_registeredtime]" not-null="false"/>
+    </property>
+    <property name="User_email" type="String">
+      <column name="[User_email]" not-null="false"/>
+    </property>
+    <property name="User_status" type="Int32">
+      <column name="[User_status]" not-null="false"/>
+    </property>
+    <property name="User_url" type="String">
+      <column name="[User_url]" not-null="false"/>
+    </property>
+   
+    <!--用户额外信息类-->
+    <bag name="UserMetaInfo" table="yd_UserMeta" inverse="true" cascade="all" lazy="false">
+      <!--指定外键列名-->
+      <key column="Users_id"/>
+      <!--关联类-->
+      <one-to-many class="YudianBlog.Model.User.UserMetaInfo"/>
+    </bag>
+
+    <!--文章类-->
+    <bag name="PostInfo" table="yd_Post" inverse="true" lazy="true">
+      <!--指定外键列名-->
+      <key column="Post_user_id"/>
+      <!--关联类-->
+      <one-to-many class="YudianBlog.Model.Post.PostInfo"/>
+    </bag>
+
+    <!--评论类-->
+    <!--<bag name="CommentInfo" table="yd_Comment" inverse="true" lazy="true">
+      --><!--指定外键列名--><!--
+      <key column="Comment_user_id"/>
+      --><!--关联类--><!--
+      <one-to-many class="YudianBlog.Model.Comment.CommentInfo"/>
+    </bag>-->
+  </class>
+</hibernate-mapping>

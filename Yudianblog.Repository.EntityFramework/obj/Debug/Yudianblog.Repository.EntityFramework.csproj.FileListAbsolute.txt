@@ -1,0 +1,12 @@
+C:\Documents and Settings\zxj\my documents\visual studio 2010\Projects\YD\YudianBlog\YudianBlog\Yudianblog.Repository.EntityFramework\bin\Debug\Yudianblog.Repository.EntityFramework.dll.config
+C:\Documents and Settings\zxj\my documents\visual studio 2010\Projects\YD\YudianBlog\YudianBlog\Yudianblog.Repository.EntityFramework\bin\Debug\Yudianblog.Repository.EntityFramework.dll
+C:\Documents and Settings\zxj\my documents\visual studio 2010\Projects\YD\YudianBlog\YudianBlog\Yudianblog.Repository.EntityFramework\bin\Debug\Yudianblog.Repository.EntityFramework.pdb
+C:\Documents and Settings\zxj\my documents\visual studio 2010\Projects\YD\YudianBlog\YudianBlog\Yudianblog.Repository.EntityFramework\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\zxj\my documents\visual studio 2010\Projects\YD\YudianBlog\YudianBlog\Yudianblog.Repository.EntityFramework\obj\Debug\Yudianblog.Repository.EntityFramework.dll
+C:\Documents and Settings\zxj\my documents\visual studio 2010\Projects\YD\YudianBlog\YudianBlog\Yudianblog.Repository.EntityFramework\obj\Debug\Yudianblog.Repository.EntityFramework.pdb
+D:\Web Project\YudianBlog\Yudianblog.Repository.EntityFramework\bin\Debug\Yudianblog.Repository.EntityFramework.dll.config
+D:\Web Project\YudianBlog\Yudianblog.Repository.EntityFramework\bin\Debug\Yudianblog.Repository.EntityFramework.dll
+D:\Web Project\YudianBlog\Yudianblog.Repository.EntityFramework\bin\Debug\Yudianblog.Repository.EntityFramework.pdb
+D:\Web Project\YudianBlog\Yudianblog.Repository.EntityFramework\obj\Debug\Yudianblog.Repository.EntityFramework.csprojResolveAssemblyReference.cache
+D:\Web Project\YudianBlog\Yudianblog.Repository.EntityFramework\obj\Debug\Yudianblog.Repository.EntityFramework.dll
+D:\Web Project\YudianBlog\Yudianblog.Repository.EntityFramework\obj\Debug\Yudianblog.Repository.EntityFramework.pdb

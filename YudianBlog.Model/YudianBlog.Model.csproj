@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{079BAE5B-D1ED-4EAF-9AEC-A56BF3ED73F5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YudianBlog.Model</RootNamespace>
+    <AssemblyName>YudianBlog.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Comment\CommentInfo.cs" />
+    <Compile Include="Comment\CommentMetaInfo.cs" />
+    <Compile Include="Comment\ICommentRepository.cs" />
+    <Compile Include="Category\CategoryType.cs" />
+    <Compile Include="Comment\CommentApproved.cs" />
+    <Compile Include="Link\LinkTarget.cs" />
+    <Compile Include="Post\PostCommentStatus .cs" />
+    <Compile Include="Post\PostStatus .cs" />
+    <Compile Include="Post\PostType.cs" />
+    <Compile Include="Link\ILinkRepository.cs" />
+    <Compile Include="Link\LinkInfo.cs" />
+    <Compile Include="Option\IOptionRepository.cs" />
+    <Compile Include="Option\OptionInfo.cs" />
+    <Compile Include="Category\CategoryInfo.cs" />
+    <Compile Include="Category\CategoryPostLinkInfo.cs" />
+    <Compile Include="Category\ICategoryRepository.cs" />
+    <Compile Include="Post\IPostRepository .cs" />
+    <Compile Include="Post\PostInfo.cs" />
+    <Compile Include="Post\PostMetaInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\IUserRepository.cs" />
+    <Compile Include="User\UserInfo.cs" />
+    <Compile Include="User\UserMetaInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YudianBlog.Infrastructure\YudianBlog.Infrastructure.csproj">
+      <Project>{0BEEBF6C-8505-42A6-869F-7D4A6AAA5E35}</Project>
+      <Name>YudianBlog.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

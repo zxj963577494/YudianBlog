@@ -1,0 +1,24 @@
+C:\Documents and Settings\zxj\My Documents\visual studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Services\bin\Debug\YudianBlog.Services.dll
+C:\Documents and Settings\zxj\My Documents\visual studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Services\bin\Debug\YudianBlog.Services.pdb
+C:\Documents and Settings\zxj\My Documents\visual studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Services\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\zxj\My Documents\visual studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Services\obj\Debug\YudianBlog.Services.dll
+C:\Documents and Settings\zxj\My Documents\visual studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Services\obj\Debug\YudianBlog.Services.pdb
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Services\bin\Debug\AutoMapper.dll
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Services\bin\Debug\YudianBlog.Infrastructure.dll
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Services\bin\Debug\YudianBlog.Model.dll
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Services\bin\Debug\log4net.dll
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Services\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Services\bin\Debug\YudianBlog.Infrastructure.pdb
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Services\bin\Debug\YudianBlog.Model.pdb
+D:\Web Project\YudianBlog\YudianBlog.Services\bin\Debug\YudianBlog.Services.dll
+D:\Web Project\YudianBlog\YudianBlog.Services\bin\Debug\YudianBlog.Services.pdb
+D:\Web Project\YudianBlog\YudianBlog.Services\bin\Debug\AutoMapper.dll
+D:\Web Project\YudianBlog\YudianBlog.Services\bin\Debug\YudianBlog.Infrastructure.dll
+D:\Web Project\YudianBlog\YudianBlog.Services\bin\Debug\YudianBlog.Model.dll
+D:\Web Project\YudianBlog\YudianBlog.Services\bin\Debug\log4net.dll
+D:\Web Project\YudianBlog\YudianBlog.Services\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Web Project\YudianBlog\YudianBlog.Services\bin\Debug\YudianBlog.Infrastructure.pdb
+D:\Web Project\YudianBlog\YudianBlog.Services\bin\Debug\YudianBlog.Model.pdb
+D:\Web Project\YudianBlog\YudianBlog.Services\obj\Debug\YudianBlog.Services.csprojResolveAssemblyReference.cache
+D:\Web Project\YudianBlog\YudianBlog.Services\obj\Debug\YudianBlog.Services.dll
+D:\Web Project\YudianBlog\YudianBlog.Services\obj\Debug\YudianBlog.Services.pdb

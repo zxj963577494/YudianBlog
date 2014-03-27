@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="false" namespace="YudianBlog.Model.Comment" assembly="YudianBlog.Model">
+  <class name="YudianBlog.Model.Comment.CommentMetaInfo,YudianBlog.Model" table="yd_CommentMeta">
+    <id name="CommentMeta_id" column="CommentMeta_id" type="int">
+      <generator class="native"/>
+    </id>
+    <property name="Comments_id" type="int">
+      <column name="Comments_id" not-null="true"/>
+    </property>
+    <property name="CommentMeta_key" type="string" >
+      <column name="CommentMeta_key" not-null="false"/>
+    </property>
+    <property name="CommentMeta_value" type="string" >
+      <column name="CommentMeta_value" not-null="false"/>
+    </property>
+
+    <!--映射关联属性，column属性指定外键列名-->
+    <many-to-one name="CommentInfo"
+                class="YudianBlog.Model.Comment.CommentInfo"
+                fetch="select"
+                cascade="save-update">
+      <column name="Comments_id" not-null="true"/>
+    </many-to-one>
+  </class>
+</hibernate-mapping>

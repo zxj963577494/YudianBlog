@@ -1,0 +1,65 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  default-lazy="false" assembly="YudianBlog.Model" namespace="YudianBlog.Model.Comment">
+  <class name="YudianBlog.Model.Comment.CommentInfo, YudianBlog.Model" table="yd_Comment">
+    <id name="Comment_id" column="Comment_id" type="int">
+      <generator class="native" />
+    </id>
+    <property name="Comment_post_id" type="int">
+      <column name="Comment_post_id" not-null="true"/>
+    </property>
+    <property name="Comment_author" type="string">
+      <column name="Comment_author" not-null="false"/>
+    </property>
+    <property name="Comment_author_email" type="string">
+      <column name="Comment_author_email" not-null="false"/>
+    </property>
+    <property name="Comment_author_url" type="string">
+      <column name="Comment_author_url" not-null="false"/>
+    </property>
+    <property name="Comment_author_ip" type="string">
+      <column name="Comment_author_ip" not-null="false"/>
+    </property>
+    <property name="Comment_date" type="DateTime">
+      <column name="Comment_date" not-null="false"/>
+    </property>
+    <property name="Comment_content" type="string">
+      <column name="Comment_content" not-null="false"/>
+    </property>
+    <property name="Comment_approved" type="NHibernate.Type.EnumStringType`1[[YudianBlog.Model.Comment.CommentApproved,YudianBlog.Model]], NHibernate">
+      <column name="Comment_approved" not-null="false"/>
+    </property>
+    <property name="Comment_agent" type="string">
+      <column name="Comment_agent" not-null="false"/>
+    </property>
+    <property name="Comment_parent" type="int">
+      <column name="Comment_parent" not-null="false"/>
+    </property>
+    <property name="Comment_user_id" type="int">
+      <column name="Comment_user_id" not-null="false"/>
+    </property>
+
+    <!--映射集合属性，关联到持久化类-->
+    <bag name="CommentMetaInfo" table="yd_CommentMeta" inverse="true" lazy="true">
+      <!--column用于指定外键列名-->
+      <key column="Comments_id"></key>
+      <!--映射关联类-->
+      <one-to-many class="YudianBlog.Model.Comment.CommentMetaInfo"/>
+    </bag>
+
+    <!--映射关联属性，column属性指定外键列名-->
+    <many-to-one name="PostInfo"
+                class="YudianBlog.Model.Post.PostInfo"
+                fetch="select"
+                cascade="save-update">
+      <column name="Comment_post_id" not-null="true"/>
+    </many-to-one>
+
+    <!--映射关联属性，column属性指定外键列名-->
+    <!--<many-to-one name="UserInfo"
+                class="YudianBlog.Model.User.UserInfo"
+                fetch="select"
+                cascade="save-update">
+      <column name="Comment_user_id" not-null="false"/>
+    </many-to-one>-->
+  </class>
+</hibernate-mapping>

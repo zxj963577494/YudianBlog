@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model1" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="Model1Container" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+    <EntitySet Name="Category" EntityType="Model1.Category" />
+    <EntitySet Name="CategoryPostLink" EntityType="Model1.CategoryPostLink" />
+    <EntitySet Name="Comment" EntityType="Model1.Comment" />
+    <EntitySet Name="CommentMate" EntityType="Model1.CommentMate" />
+    <EntitySet Name="Link" EntityType="Model1.Link" />
+    <EntitySet Name="Option" EntityType="Model1.Option" />
+    <EntitySet Name="Post" EntityType="Model1.Post" />
+    <EntitySet Name="PostMate" EntityType="Model1.PostMate" />
+    <EntitySet Name="User" EntityType="Model1.User" />
+    <EntitySet Name="UserMate" EntityType="Model1.UserMate" />
+    <AssociationSet Name="FK_CategoryPostLink_Category" Association="Model1.FK_CategoryPostLink_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="CategoryPostLink" EntitySet="CategoryPostLink" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CategoryPostLink_Link" Association="Model1.FK_CategoryPostLink_Link">
+      <End Role="Link" EntitySet="Link" />
+      <End Role="CategoryPostLink" EntitySet="CategoryPostLink" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CategoryPostLink_Post" Association="Model1.FK_CategoryPostLink_Post">
+      <End Role="Post" EntitySet="Post" />
+      <End Role="CategoryPostLink" EntitySet="CategoryPostLink" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comment_Post" Association="Model1.FK_Comment_Post">
+      <End Role="Post" EntitySet="Post" />
+      <End Role="Comment" EntitySet="Comment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CommentCommentMate" Association="Model1.FK_CommentCommentMate">
+      <End Role="Comment" EntitySet="Comment" />
+      <End Role="CommentMate" EntitySet="CommentMate" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Post_User" Association="Model1.FK_Post_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Post" EntitySet="Post" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PostMate_Post" Association="Model1.FK_PostMate_Post">
+      <End Role="Post" EntitySet="Post" />
+      <End Role="PostMate" EntitySet="PostMate" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserMate_User" Association="Model1.FK_UserMate_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserMate" EntitySet="UserMate" />
+    </AssociationSet>
+  </EntityContainer>
+  <ComplexType Name="CategoryType">
+    <Property Type="String" Name="post" Nullable="false" />
+    <Property Type="String" Name="link" Nullable="false" />
+    <Property Type="String" Name="tag" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="CommentApproved">
+    <Property Type="String" Name="allow" Nullable="false" DefaultValue="1">
+      <Documentation>
+        <Summary>允许发布</Summary>
+        <LongDescription>允许发布</LongDescription>
+      </Documentation>
+    </Property>
+    <Property Type="String" Name="review" Nullable="false" DefaultValue="2" />
+    <Property Type="String" Name="rubbish" Nullable="false" DefaultValue="3" />
+  </ComplexType>
+  <ComplexType Name="PostStatus">
+    <Property Type="String" Name="open" Nullable="false" DefaultValue="1">
+      <Documentation>
+        <Summary>公开</Summary>
+        <LongDescription>公开</LongDescription>
+      </Documentation>
+    </Property>
+    <Property Type="String" Name="close" Nullable="false">
+      <Documentation>
+        <Summary>私人</Summary>
+        <LongDescription>私人</LongDescription>
+      </Documentation>
+    </Property>
+    <Property Type="String" Name="draft" Nullable="false" DefaultValue="3">
+      <Documentation>
+        <Summary>草稿</Summary>
+        <LongDescription>草稿</LongDescription>
+      </Documentation>
+    </Property>
+  </ComplexType>
+  <ComplexType Name="PostCommentStatus">
+    <Property Type="String" Name="open" Nullable="false" DefaultValue="1">
+      <Documentation>
+        <Summary>允许评论</Summary>
+        <LongDescription>允许评论</LongDescription>
+      </Documentation>
+    </Property>
+    <Property Type="String" Name="close" Nullable="false" cg:GetterAccess="Public" DefaultValue="2" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration">
+      <Documentation>
+        <Summary>不允许评论</Summary>
+        <LongDescription>不允许评论</LongDescription>
+      </Documentation>
+    </Property>
+    <Property Type="String" Name="regstered" Nullable="false" DefaultValue="3">
+      <Documentation>
+        <Summary>只有注册用户方可评论</Summary>
+        <LongDescription>只有注册用户方可评论</LongDescription>
+      </Documentation>
+    </Property>
+  </ComplexType>
+  <ComplexType Name="PostType">
+    <Property Type="String" Name="post" Nullable="true" DefaultValue="1">
+      <Documentation>
+        <Summary>日志</Summary>
+        <LongDescription>日志</LongDescription>
+      </Documentation>
+    </Property>
+    <Property Type="String" Name="page" Nullable="false" DefaultValue="2">
+      <Documentation>
+        <Summary>静态页面</Summary>
+        <LongDescription>静态页面</LongDescription>
+      </Documentation>
+    </Property>
+    <Property Type="String" Name="attachment" Nullable="false" DefaultValue="3">
+      <Documentation>
+        <Summary>附件</Summary>
+        <LongDescription>附件</LongDescription>
+      </Documentation>
+    </Property>
+  </ComplexType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="Category_id" />
+    </Key>
+    <Property Type="Int32" Name="Category_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="Category_name" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Category_slug" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Category_group" />
+    <Property Type="String" Name="Category_description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Category_addtime" />
+    <Property Type="Int32" Name="Category_count" />
+    <Property Type="Int32" Name="Category_parent" />
+    <Property Type="String" Name="Category_type" MaxLength="32" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CategoryPostLink" Relationship="Model1.FK_CategoryPostLink_Category" FromRole="Category" ToRole="CategoryPostLink" />
+  </EntityType>
+  <EntityType Name="CategoryPostLink">
+    <Key>
+      <PropertyRef Name="Object_id" />
+      <PropertyRef Name="Categorys_id" />
+    </Key>
+    <Property Type="Int32" Name="Object_id" Nullable="false" />
+    <Property Type="Int32" Name="Categorys_id" Nullable="false" />
+    <NavigationProperty Name="Category" Relationship="Model1.FK_CategoryPostLink_Category" FromRole="CategoryPostLink" ToRole="Category" />
+    <NavigationProperty Name="Link" Relationship="Model1.FK_CategoryPostLink_Link" FromRole="CategoryPostLink" ToRole="Link" />
+    <NavigationProperty Name="Post" Relationship="Model1.FK_CategoryPostLink_Post" FromRole="CategoryPostLink" ToRole="Post" />
+  </EntityType>
+  <EntityType Name="Comment">
+    <Key>
+      <PropertyRef Name="Comment_id" />
+    </Key>
+    <Property Type="Int32" Name="Comment_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int32" Name="Comment_users_id" Nullable="false" />
+    <Property Type="String" Name="Comment_agent" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Comment_approved" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Comment_content" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Comment_date" />
+    <Property Type="String" Name="Comment_author_ip" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Comment_author_url" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Comment_post_id" Nullable="false" />
+    <Property Type="Int32" Name="Comment_parent" Nullable="false" />
+    <Property Type="String" Name="Comment_author" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Comment_author_email" MaxLength="64" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Post" Relationship="Model1.FK_Comment_Post" FromRole="Comment" ToRole="Post" />
+    <NavigationProperty Name="CommentMate" Relationship="Model1.FK_CommentCommentMate" FromRole="Comment" ToRole="CommentMate" />
+  </EntityType>
+  <EntityType Name="CommentMate">
+    <Key>
+      <PropertyRef Name="CommentMeta_id" />
+    </Key>
+    <Property Type="Int32" Name="CommentMeta_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="CommentMete_key" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CommentMeta_value" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Comments_id" Nullable="false" />
+    <NavigationProperty Name="Comment" Relationship="Model1.FK_CommentCommentMate" FromRole="CommentMate" ToRole="Comment" />
+  </EntityType>
+  <EntityType Name="Link">
+    <Key>
+      <PropertyRef Name="Link_id" />
+    </Key>
+    <Property Type="Int32" Name="Link_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="Link_url" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Link_name" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Link_image" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Link_target" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Link_description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Link_visible" />
+    <Property Type="Int32" Name="Link_owner" />
+    <Property Type="Int32" Name="Link_rating" />
+    <Property Type="DateTime" Name="Link_updated" />
+    <Property Type="String" Name="Link_rel" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Link_notes" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Link_rss" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CategoryPostLink" Relationship="Model1.FK_CategoryPostLink_Link" FromRole="Link" ToRole="CategoryPostLink" />
+  </EntityType>
+  <EntityType Name="Option">
+    <Key>
+      <PropertyRef Name="Option_id" />
+    </Key>
+    <Property Type="Int32" Name="Option_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="Option_name" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Option_value" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Option_autoload" />
+  </EntityType>
+  <EntityType Name="Post">
+    <Key>
+      <PropertyRef Name="Post_id" />
+    </Key>
+    <Property Type="Int32" Name="Post_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int32" Name="Post_user_id" Nullable="false" />
+    <Property Type="DateTime" Name="Post_date" Nullable="false" />
+    <Property Type="String" Name="Post_title" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Post_content" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Post_excerpt" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Post_status" Nullable="false" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Post_comment_status" Nullable="false" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Post_password" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Post_modified" />
+    <Property Type="Int32" Name="Post_parent" />
+    <Property Type="String" Name="Post_address" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Post_type" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Post_viewcount" Nullable="false" />
+    <Property Type="Int32" Name="Post_comment_count" Nullable="false" />
+    <NavigationProperty Name="CategoryPostLink" Relationship="Model1.FK_CategoryPostLink_Post" FromRole="Post" ToRole="CategoryPostLink" />
+    <NavigationProperty Name="Comment" Relationship="Model1.FK_Comment_Post" FromRole="Post" ToRole="Comment" />
+    <NavigationProperty Name="User" Relationship="Model1.FK_Post_User" FromRole="Post" ToRole="User" />
+    <NavigationProperty Name="PostMate" Relationship="Model1.FK_PostMate_Post" FromRole="Post" ToRole="PostMate" />
+  </EntityType>
+  <EntityType Name="PostMate">
+    <Key>
+      <PropertyRef Name="PostMate_id" />
+    </Key>
+    <Property Type="Int32" Name="PostMate_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int32" Name="Posts_id" Nullable="false" />
+    <Property Type="String" Name="PostMete_key" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PostMeta_value" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Post" Relationship="Model1.FK_PostMate_Post" FromRole="PostMate" ToRole="Post" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="User_id" />
+    </Key>
+    <Property Type="Int32" Name="User_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="User_email" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="User_nicename" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="User_salt" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="User_pass" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="User_login" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="User_status" />
+    <NavigationProperty Name="Post" Relationship="Model1.FK_Post_User" FromRole="User" ToRole="Post" />
+    <NavigationProperty Name="UserMate" Relationship="Model1.FK_UserMate_User" FromRole="User" ToRole="UserMate" />
+  </EntityType>
+  <EntityType Name="UserMate">
+    <Key>
+      <PropertyRef Name="UserMate_id" />
+    </Key>
+    <Property Type="Int32" Name="UserMate_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int32" Name="Users_id" Nullable="false" />
+    <Property Type="String" Name="UserMete_key" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="UserMeta_value" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="User" Relationship="Model1.FK_UserMate_User" FromRole="UserMate" ToRole="User" />
+  </EntityType>
+  <Association Name="FK_CategoryPostLink_Category">
+    <End Type="Model1.Category" Role="Category" Multiplicity="1" />
+    <End Type="Model1.CategoryPostLink" Role="CategoryPostLink" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="Category_id" />
+      </Principal>
+      <Dependent Role="CategoryPostLink">
+        <PropertyRef Name="Categorys_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CategoryPostLink_Link">
+    <End Type="Model1.Link" Role="Link" Multiplicity="1" />
+    <End Type="Model1.CategoryPostLink" Role="CategoryPostLink" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Link">
+        <PropertyRef Name="Link_id" />
+      </Principal>
+      <Dependent Role="CategoryPostLink">
+        <PropertyRef Name="Object_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CategoryPostLink_Post">
+    <End Type="Model1.Post" Role="Post" Multiplicity="1" />
+    <End Type="Model1.CategoryPostLink" Role="CategoryPostLink" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Post">
+        <PropertyRef Name="Post_id" />
+      </Principal>
+      <Dependent Role="CategoryPostLink">
+        <PropertyRef Name="Object_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comment_Post">
+    <End Type="Model1.Post" Role="Post" Multiplicity="1" />
+    <End Type="Model1.Comment" Role="Comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Post">
+        <PropertyRef Name="Post_id" />
+      </Principal>
+      <Dependent Role="Comment">
+        <PropertyRef Name="Comment_post_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CommentCommentMate">
+    <End Type="Model1.Comment" Role="Comment" Multiplicity="1" />
+    <End Type="Model1.CommentMate" Role="CommentMate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Comment">
+        <PropertyRef Name="Comment_id" />
+      </Principal>
+      <Dependent Role="CommentMate">
+        <PropertyRef Name="Comments_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Post_User">
+    <End Type="Model1.User" Role="User" Multiplicity="1" />
+    <End Type="Model1.Post" Role="Post" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="User_id" />
+      </Principal>
+      <Dependent Role="Post">
+        <PropertyRef Name="Post_user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PostMate_Post">
+    <End Type="Model1.Post" Role="Post" Multiplicity="1" />
+    <End Type="Model1.PostMate" Role="PostMate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Post">
+        <PropertyRef Name="Post_id" />
+      </Principal>
+      <Dependent Role="PostMate">
+        <PropertyRef Name="Posts_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserMate_User">
+    <End Type="Model1.User" Role="User" Multiplicity="1" />
+    <End Type="Model1.UserMate" Role="UserMate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="User_id" />
+      </Principal>
+      <Dependent Role="UserMate">
+        <PropertyRef Name="Users_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

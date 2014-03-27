@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B067B37C-0DB6-4E03-AD91-82181B504774}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YudianBlog.Services</RootNamespace>
+    <AssemblyName>YudianBlog.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\Lib\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoMapperBootStrapper.cs" />
+    <Compile Include="Implementations\CategoryService.cs" />
+    <Compile Include="Implementations\PostServices.cs" />
+    <Compile Include="Implementations\PostSearchRequestQueryGenerator.cs" />
+    <Compile Include="Implementations\UserService.cs" />
+    <Compile Include="Interfaces\ICategoryService.cs" />
+    <Compile Include="Interfaces\IPostService.cs" />
+    <Compile Include="Interfaces\IUserService.cs" />
+    <Compile Include="Mapping\CategoryMapper.cs" />
+    <Compile Include="Mapping\PostMapper.cs" />
+    <Compile Include="Mapping\UserMapper.cs" />
+    <Compile Include="Messaging\Category\GetAllSimpleCategoryRespose.cs" />
+    <Compile Include="Messaging\Post\GetFeaturePostRequest.cs" />
+    <Compile Include="Messaging\Post\GetFeaturePostRespose.cs" />
+    <Compile Include="Messaging\Post\GetPostAllRespose.cs" />
+    <Compile Include="Messaging\Post\GetPostByCategoryRequest.cs" />
+    <Compile Include="Messaging\Post\GetPostByCategoryRespose.cs" />
+    <Compile Include="Messaging\Post\GetPostByIdRequest.cs" />
+    <Compile Include="Messaging\Post\GetPostByIdRespose.cs" />
+    <Compile Include="Messaging\Post\PostSortBy.cs" />
+    <Compile Include="Messaging\User\GetUserDetailRespose.cs" />
+    <Compile Include="Messaging\User\GetUserSimpleRespose.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\CategoryDetailView.cs" />
+    <Compile Include="ViewModel\CategorySimpleView.cs" />
+    <Compile Include="ViewModel\PostDetailView.cs" />
+    <Compile Include="ViewModel\PostListView.cs" />
+    <Compile Include="ViewModel\PostMetaView.cs" />
+    <Compile Include="ViewModel\PostSimpleView.cs" />
+    <Compile Include="ViewModel\UserDetailView.cs" />
+    <Compile Include="ViewModel\UserMetaView.cs" />
+    <Compile Include="ViewModel\UserSimpleView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YudianBlog.Infrastructure\YudianBlog.Infrastructure.csproj">
+      <Project>{0beebf6c-8505-42a6-869f-7d4a6aaa5e35}</Project>
+      <Name>YudianBlog.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YudianBlog.Model\YudianBlog.Model.csproj">
+      <Project>{079bae5b-d1ed-4eaf-9aec-a56bf3ed73f5}</Project>
+      <Name>YudianBlog.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

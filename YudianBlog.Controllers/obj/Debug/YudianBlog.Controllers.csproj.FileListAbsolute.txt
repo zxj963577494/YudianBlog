@@ -1,0 +1,39 @@
+C:\Documents and Settings\zxj\My Documents\visual studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Controllers\bin\Debug\YudianBlog.Controllers.dll
+C:\Documents and Settings\zxj\My Documents\visual studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Controllers\bin\Debug\YudianBlog.Controllers.pdb
+C:\Documents and Settings\zxj\My Documents\visual studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Controllers\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\zxj\My Documents\visual studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Controllers\obj\Debug\YudianBlog.Controllers.dll
+C:\Documents and Settings\zxj\My Documents\visual studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Controllers\obj\Debug\YudianBlog.Controllers.pdb
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Controllers\bin\Debug\YudianBlog.Services.dll
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Controllers\bin\Debug\YudianBlog.Model.dll
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Controllers\bin\Debug\YudianBlog.Infrastructure.dll
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Controllers\bin\Debug\AutoMapper.dll
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Controllers\bin\Debug\log4net.dll
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Controllers\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Controllers\bin\Debug\YudianBlog.Services.pdb
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Controllers\bin\Debug\YudianBlog.Model.pdb
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Controllers\bin\Debug\YudianBlog.Infrastructure.pdb
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Controllers\bin\Debug\StructureMap.dll
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Controllers\bin\Debug\Antlr3.Runtime.dll
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Controllers\bin\Debug\MvcContrib.dll
+C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Controllers\bin\Debug\NVelocity.dll
+D:\Web Project\YudianBlog\YudianBlog.Controllers\obj\Debug\YudianBlog.Controllers.csprojResolveAssemblyReference.cache
+D:\Web Project\YudianBlog\YudianBlog.Controllers\obj\Debug\YudianBlog.Controllers.dll
+D:\Web Project\YudianBlog\YudianBlog.Controllers\obj\Debug\YudianBlog.Controllers.pdb
+D:\Web Project\YudianBlog\YudianBlog.Controllers\bin\Debug\YudianBlog.Controllers.dll
+D:\Web Project\YudianBlog\YudianBlog.Controllers\bin\Debug\YudianBlog.Controllers.pdb
+D:\Web Project\YudianBlog\YudianBlog.Controllers\bin\Debug\Antlr3.Runtime.dll
+D:\Web Project\YudianBlog\YudianBlog.Controllers\bin\Debug\MvcContrib.dll
+D:\Web Project\YudianBlog\YudianBlog.Controllers\bin\Debug\NVelocity.dll
+D:\Web Project\YudianBlog\YudianBlog.Controllers\bin\Debug\StructureMap.dll
+D:\Web Project\YudianBlog\YudianBlog.Controllers\bin\Debug\System.Web.Mvc.dll
+D:\Web Project\YudianBlog\YudianBlog.Controllers\bin\Debug\YudianBlog.Infrastructure.dll
+D:\Web Project\YudianBlog\YudianBlog.Controllers\bin\Debug\YudianBlog.Model.dll
+D:\Web Project\YudianBlog\YudianBlog.Controllers\bin\Debug\YudianBlog.Services.dll
+D:\Web Project\YudianBlog\YudianBlog.Controllers\bin\Debug\log4net.dll
+D:\Web Project\YudianBlog\YudianBlog.Controllers\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Web Project\YudianBlog\YudianBlog.Controllers\bin\Debug\AutoMapper.dll
+D:\Web Project\YudianBlog\YudianBlog.Controllers\bin\Debug\YudianBlog.Infrastructure.pdb
+D:\Web Project\YudianBlog\YudianBlog.Controllers\bin\Debug\YudianBlog.Model.pdb
+D:\Web Project\YudianBlog\YudianBlog.Controllers\bin\Debug\YudianBlog.Services.pdb
+D:\Web Project\YudianBlog\YudianBlog.Controllers\bin\Debug\System.Web.Mvc.xml
+D:\Web Project\YudianBlog\YudianBlog.Controllers\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll

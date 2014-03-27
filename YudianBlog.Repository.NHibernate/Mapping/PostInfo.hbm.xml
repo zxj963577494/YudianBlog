@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		namespace="YudianBlog.Model.Post" assembly="YudianBlog.Model" default-lazy="false">
+  <class name="YudianBlog.Model.Post.PostInfo" table="yd_Post" >
+
+    <id name="Post_id" column="[Post_id]" type="int">
+      <generator class="native" />
+    </id>
+    <property name="Post_user_id" type="int">
+      <column name="[Post_user_id]" not-null="false"></column>
+    </property>
+    <property name="Post_date" type="DateTime">
+      <column name="[Post_date]" not-null="false"></column>
+    </property>
+    <property name="Post_title" type="string">
+      <column name="[Post_title]" not-null="false"></column>
+    </property>
+    <property name="Post_excerpt" type="string">
+      <column name="[Post_excerpt]" not-null="false"></column>
+    </property>
+    <property name="Post_status" type="NHibernate.Type.EnumStringType`1[[YudianBlog.Model.Post.PostStatus,YudianBlog.Model]], NHibernate">
+      <column name="[Post_status]" sql-type="nvarchar" not-null="false"></column>
+    </property>
+    <property name="Post_comment_status" type="NHibernate.Type.EnumStringType`1[[YudianBlog.Model.Post.PostCommentStatus,YudianBlog.Model]], NHibernate">
+      <column name="[Post_comment_status]"  sql-type="nvarchar" not-null="false"></column>
+    </property>
+    <property name="Post_name" type="string">
+      <column name="[Post_name]" not-null="false"></column>
+    </property>
+    <property name="Post_content" type="string">
+      <column name="[Post_content]" not-null="false"></column>
+    </property>
+    <property name="Post_password" type="string">
+      <column name="[Post_password]" not-null="false"></column>
+    </property>
+    <property name="Post_modified" type="DateTime">
+      <column name="[Post_modified]" not-null="false"></column>
+    </property>
+    <property name="Post_parent" type="int">
+      <column name="[Post_parent]" not-null="false"></column>
+    </property>
+    <property name="Post_address" type="string">
+      <column name="[Post_address]" not-null="false"></column>
+    </property>
+    <property name="Post_type" type="NHibernate.Type.EnumStringType`1[[YudianBlog.Model.Post.PostType,YudianBlog.Model]], NHibernate">
+      <column name="[Post_type]"  sql-type="nvarchar" not-null="false"></column>
+    </property>
+    <property name="Post_comment_count" type="int">
+      <column name="[Post_comment_count]" not-null="false"></column>
+    </property>
+    <property name="Post_viewcount" type="int">
+      <column name="[Post_viewcount]" not-null="false"></column>
+    </property>
+
+    <!--映射集合属性，关联到持久化类-->
+    <!--table="yd_CategoryPostLink" 指定了连接表(中间表)的名字-->
+    <bag name="CategoryInfo" table="yd_CategoryPostLink" lazy="false" cascade="all" inverse="true" >
+      <!--column="Post_id"指定连接表中关联当前实体类的列名-->
+      <key column="[Object_id]" not-null="false"/>
+      <!--column="Object_id"是连接表中关联本实体的外键-->
+      <many-to-many column="[Categorys_id]"
+				class="YudianBlog.Model.Category.CategoryInfo"/>
+    </bag>
+
+    <!--映射集合属性，关联到持久化类-->
+    <bag name="PostMetaInfo" table="yd_PostMeta" inverse="true" lazy="true">
+      <!--column用于指定外键列名-->
+      <key column="[Posts_id]" not-null="false"/>
+      <!--映射关联类-->
+      <one-to-many class="YudianBlog.Model.Post.PostMetaInfo"/>
+    </bag>
+
+    <bag name="CommentInfo" table="yd_Comment" inverse="true" lazy="true">
+      <key column="[Comment_post_id]" not-null="false"/>
+      <one-to-many class="YudianBlog.Model.Comment.CommentInfo"/>
+    </bag>
+
+
+
+    <!--映射关联属性，column属性指定外键列名-->
+    <many-to-one name="UserInfo" lazy="false"
+								 class="YudianBlog.Model.User.UserInfo"
+								 fetch="select"
+								 cascade="save-update">
+      <column name="[Post_user_id]" not-null="false"/>
+    </many-to-one>
+  </class>
+
+</hibernate-mapping>
