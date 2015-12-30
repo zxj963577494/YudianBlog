@@ -22,15 +22,3 @@ D:\Web Project\YudianBlog\YudianBlog.Services\bin\Debug\YudianBlog.Model.pdb
 D:\Web Project\YudianBlog\YudianBlog.Services\obj\Debug\YudianBlog.Services.csprojResolveAssemblyReference.cache
 D:\Web Project\YudianBlog\YudianBlog.Services\obj\Debug\YudianBlog.Services.dll
 D:\Web Project\YudianBlog\YudianBlog.Services\obj\Debug\YudianBlog.Services.pdb
-D:\GitHub\YudianBlog\YudianBlog.Services\bin\Debug\YudianBlog.Services.dll
-D:\GitHub\YudianBlog\YudianBlog.Services\bin\Debug\YudianBlog.Services.pdb
-D:\GitHub\YudianBlog\YudianBlog.Services\bin\Debug\YudianBlog.Infrastructure.dll
-D:\GitHub\YudianBlog\YudianBlog.Services\bin\Debug\YudianBlog.Model.dll
-D:\GitHub\YudianBlog\YudianBlog.Services\bin\Debug\log4net.dll
-D:\GitHub\YudianBlog\YudianBlog.Services\bin\Debug\ICSharpCode.SharpZipLib.dll
-D:\GitHub\YudianBlog\YudianBlog.Services\bin\Debug\YudianBlog.Infrastructure.pdb
-D:\GitHub\YudianBlog\YudianBlog.Services\bin\Debug\YudianBlog.Model.pdb
-D:\GitHub\YudianBlog\YudianBlog.Services\obj\Debug\YudianBlog.Services.csprojResolveAssemblyReference.cache
-D:\GitHub\YudianBlog\YudianBlog.Services\obj\Debug\YudianBlog.Services.dll
-D:\GitHub\YudianBlog\YudianBlog.Services\obj\Debug\YudianBlog.Services.pdb
-D:\GitHub\YudianBlog\YudianBlog.Services\bin\Debug\AutoMapper.dll

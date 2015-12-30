@@ -24,16 +24,3 @@ D:\Web Project\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\YudianBlog.
 D:\Web Project\YudianBlog\YudianBlog.Repository.NHibernate\obj\Debug\YudianBlog.Repository.NHibernate.csprojResolveAssemblyReference.cache
 D:\Web Project\YudianBlog\YudianBlog.Repository.NHibernate\obj\Debug\YudianBlog.Repository.NHibernate.dll
 D:\Web Project\YudianBlog\YudianBlog.Repository.NHibernate\obj\Debug\YudianBlog.Repository.NHibernate.pdb
-D:\GitHub\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\YudianBlog.Repository.NHibernate.dll
-D:\GitHub\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\YudianBlog.Repository.NHibernate.pdb
-D:\GitHub\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\YudianBlog.Infrastructure.dll
-D:\GitHub\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\YudianBlog.Model.dll
-D:\GitHub\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\ICSharpCode.SharpZipLib.dll
-D:\GitHub\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\YudianBlog.Infrastructure.pdb
-D:\GitHub\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\YudianBlog.Model.pdb
-D:\GitHub\YudianBlog\YudianBlog.Repository.NHibernate\obj\Debug\YudianBlog.Repository.NHibernate.csprojResolveAssemblyReference.cache
-D:\GitHub\YudianBlog\YudianBlog.Repository.NHibernate\obj\Debug\YudianBlog.Repository.NHibernate.dll
-D:\GitHub\YudianBlog\YudianBlog.Repository.NHibernate\obj\Debug\YudianBlog.Repository.NHibernate.pdb
-D:\GitHub\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\Iesi.Collections.dll
-D:\GitHub\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\log4net.dll
-D:\GitHub\YudianBlog\YudianBlog.Repository.NHibernate\bin\Debug\NHibernate.dll

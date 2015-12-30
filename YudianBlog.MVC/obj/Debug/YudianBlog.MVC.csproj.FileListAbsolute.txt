@@ -38,31 +38,3 @@ D:\Web Project\YudianBlog\YudianBlog.MVC\bin\zh-Hans\System.Web.Helpers.resource
 D:\Web Project\YudianBlog\YudianBlog.MVC\bin\zh-Hans\System.Web.Mvc.resources.dll
 D:\Web Project\YudianBlog\YudianBlog.MVC\obj\Debug\YudianBlog.MVC.dll
 D:\Web Project\YudianBlog\YudianBlog.MVC\obj\Debug\YudianBlog.MVC.pdb
-D:\GitHub\YudianBlog\YudianBlog.MVC\bin\YudianBlog.MVC.dll.config
-D:\GitHub\YudianBlog\YudianBlog.MVC\bin\YudianBlog.MVC.dll
-D:\GitHub\YudianBlog\YudianBlog.MVC\bin\YudianBlog.MVC.pdb
-D:\GitHub\YudianBlog\YudianBlog.MVC\bin\System.Web.Helpers.dll
-D:\GitHub\YudianBlog\YudianBlog.MVC\bin\System.Web.Webpages.Deployment.dll
-D:\GitHub\YudianBlog\YudianBlog.MVC\bin\YudianBlog.Controllers.dll
-D:\GitHub\YudianBlog\YudianBlog.MVC\bin\YudianBlog.Infrastructure.dll
-D:\GitHub\YudianBlog\YudianBlog.MVC\bin\YudianBlog.Model.dll
-D:\GitHub\YudianBlog\YudianBlog.MVC\bin\YudianBlog.Repository.NHibernate.dll
-D:\GitHub\YudianBlog\YudianBlog.MVC\bin\YudianBlog.Services.dll
-D:\GitHub\YudianBlog\YudianBlog.MVC\bin\log4net.dll
-D:\GitHub\YudianBlog\YudianBlog.MVC\bin\ICSharpCode.SharpZipLib.dll
-D:\GitHub\YudianBlog\YudianBlog.MVC\bin\NHibernate.dll
-D:\GitHub\YudianBlog\YudianBlog.MVC\bin\AutoMapper.dll
-D:\GitHub\YudianBlog\YudianBlog.MVC\bin\Iesi.Collections.dll
-D:\GitHub\YudianBlog\YudianBlog.MVC\bin\YudianBlog.Controllers.pdb
-D:\GitHub\YudianBlog\YudianBlog.MVC\bin\YudianBlog.Infrastructure.pdb
-D:\GitHub\YudianBlog\YudianBlog.MVC\bin\YudianBlog.Model.pdb
-D:\GitHub\YudianBlog\YudianBlog.MVC\bin\YudianBlog.Repository.NHibernate.pdb
-D:\GitHub\YudianBlog\YudianBlog.MVC\bin\YudianBlog.Services.pdb
-D:\GitHub\YudianBlog\YudianBlog.MVC\bin\System.Web.Webpages.Deployment.xml
-D:\GitHub\YudianBlog\YudianBlog.MVC\bin\System.Web.Helpers.xml
-D:\GitHub\YudianBlog\YudianBlog.MVC\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
-D:\GitHub\YudianBlog\YudianBlog.MVC\bin\zh-Hans\System.Web.Helpers.resources.dll
-D:\GitHub\YudianBlog\YudianBlog.MVC\obj\Debug\YudianBlog.MVC.csprojResolveAssemblyReference.cache
-D:\GitHub\YudianBlog\YudianBlog.MVC\obj\Debug\YudianBlog.MVC.dll
-D:\GitHub\YudianBlog\YudianBlog.MVC\obj\Debug\YudianBlog.MVC.pdb
-D:\GitHub\YudianBlog\YudianBlog.MVC\bin\StructureMap.dll

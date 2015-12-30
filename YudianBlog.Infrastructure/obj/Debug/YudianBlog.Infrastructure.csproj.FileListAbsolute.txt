@@ -11,9 +11,3 @@ D:\Web Project\YudianBlog\YudianBlog.Infrastructure\bin\Debug\ICSharpCode.SharpZ
 D:\Web Project\YudianBlog\YudianBlog.Infrastructure\bin\Debug\log4net.dll
 D:\Web Project\YudianBlog\YudianBlog.Infrastructure\obj\Debug\YudianBlog.Infrastructure.dll
 D:\Web Project\YudianBlog\YudianBlog.Infrastructure\obj\Debug\YudianBlog.Infrastructure.pdb
-D:\GitHub\YudianBlog\YudianBlog.Infrastructure\bin\Debug\YudianBlog.Infrastructure.dll
-D:\GitHub\YudianBlog\YudianBlog.Infrastructure\bin\Debug\YudianBlog.Infrastructure.pdb
-D:\GitHub\YudianBlog\YudianBlog.Infrastructure\obj\Debug\YudianBlog.Infrastructure.dll
-D:\GitHub\YudianBlog\YudianBlog.Infrastructure\obj\Debug\YudianBlog.Infrastructure.pdb
-D:\GitHub\YudianBlog\YudianBlog.Infrastructure\bin\Debug\ICSharpCode.SharpZipLib.dll
-D:\GitHub\YudianBlog\YudianBlog.Infrastructure\bin\Debug\log4net.dll
