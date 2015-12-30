@@ -37,3 +37,21 @@ D:\Web Project\YudianBlog\YudianBlog.Controllers\bin\Debug\YudianBlog.Model.pdb
 D:\Web Project\YudianBlog\YudianBlog.Controllers\bin\Debug\YudianBlog.Services.pdb
 D:\Web Project\YudianBlog\YudianBlog.Controllers\bin\Debug\System.Web.Mvc.xml
 D:\Web Project\YudianBlog\YudianBlog.Controllers\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
+D:\GitHub\YudianBlog\YudianBlog.Controllers\bin\Debug\YudianBlog.Controllers.dll
+D:\GitHub\YudianBlog\YudianBlog.Controllers\bin\Debug\YudianBlog.Controllers.pdb
+D:\GitHub\YudianBlog\YudianBlog.Controllers\bin\Debug\Antlr3.Runtime.dll
+D:\GitHub\YudianBlog\YudianBlog.Controllers\bin\Debug\MvcContrib.dll
+D:\GitHub\YudianBlog\YudianBlog.Controllers\bin\Debug\NVelocity.dll
+D:\GitHub\YudianBlog\YudianBlog.Controllers\bin\Debug\StructureMap.dll
+D:\GitHub\YudianBlog\YudianBlog.Controllers\bin\Debug\YudianBlog.Infrastructure.dll
+D:\GitHub\YudianBlog\YudianBlog.Controllers\bin\Debug\YudianBlog.Model.dll
+D:\GitHub\YudianBlog\YudianBlog.Controllers\bin\Debug\YudianBlog.Services.dll
+D:\GitHub\YudianBlog\YudianBlog.Controllers\bin\Debug\log4net.dll
+D:\GitHub\YudianBlog\YudianBlog.Controllers\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\GitHub\YudianBlog\YudianBlog.Controllers\bin\Debug\AutoMapper.dll
+D:\GitHub\YudianBlog\YudianBlog.Controllers\bin\Debug\YudianBlog.Infrastructure.pdb
+D:\GitHub\YudianBlog\YudianBlog.Controllers\bin\Debug\YudianBlog.Model.pdb
+D:\GitHub\YudianBlog\YudianBlog.Controllers\bin\Debug\YudianBlog.Services.pdb
+D:\GitHub\YudianBlog\YudianBlog.Controllers\obj\Debug\YudianBlog.Controllers.csprojResolveAssemblyReference.cache
+D:\GitHub\YudianBlog\YudianBlog.Controllers\obj\Debug\YudianBlog.Controllers.dll
+D:\GitHub\YudianBlog\YudianBlog.Controllers\obj\Debug\YudianBlog.Controllers.pdb

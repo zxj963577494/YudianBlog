@@ -1,18 +1,9 @@
-C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Model\bin\Debug\YudianBlog.Model.dll
-C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Model\bin\Debug\YudianBlog.Model.pdb
-C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Model\bin\Debug\YudianBlog.Infrastructure.dll
-C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Model\bin\Debug\log4net.dll
-C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Model\bin\Debug\ICSharpCode.SharpZipLib.dll
-C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Model\bin\Debug\YudianBlog.Infrastructure.pdb
-C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Model\obj\Debug\ResolveAssemblyReference.cache
-C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Model\obj\Debug\YudianBlog.Model.dll
-C:\Documents and Settings\zxj\My Documents\Visual Studio 2010\Projects\YD\YudianBlog\YudianBlog\YudianBlog.Model\obj\Debug\YudianBlog.Model.pdb
-D:\Web Project\YudianBlog\YudianBlog.Model\bin\Debug\YudianBlog.Model.dll
-D:\Web Project\YudianBlog\YudianBlog.Model\bin\Debug\YudianBlog.Model.pdb
-D:\Web Project\YudianBlog\YudianBlog.Model\bin\Debug\YudianBlog.Infrastructure.dll
-D:\Web Project\YudianBlog\YudianBlog.Model\bin\Debug\log4net.dll
-D:\Web Project\YudianBlog\YudianBlog.Model\bin\Debug\ICSharpCode.SharpZipLib.dll
-D:\Web Project\YudianBlog\YudianBlog.Model\bin\Debug\YudianBlog.Infrastructure.pdb
-D:\Web Project\YudianBlog\YudianBlog.Model\obj\Debug\YudianBlog.Model.csprojResolveAssemblyReference.cache
-D:\Web Project\YudianBlog\YudianBlog.Model\obj\Debug\YudianBlog.Model.dll
-D:\Web Project\YudianBlog\YudianBlog.Model\obj\Debug\YudianBlog.Model.pdb
+D:\GitHub\YudianBlog\YudianBlog.Model\bin\Debug\YudianBlog.Model.dll
+D:\GitHub\YudianBlog\YudianBlog.Model\bin\Debug\YudianBlog.Model.pdb
+D:\GitHub\YudianBlog\YudianBlog.Model\bin\Debug\YudianBlog.Infrastructure.dll
+D:\GitHub\YudianBlog\YudianBlog.Model\bin\Debug\log4net.dll
+D:\GitHub\YudianBlog\YudianBlog.Model\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\GitHub\YudianBlog\YudianBlog.Model\bin\Debug\YudianBlog.Infrastructure.pdb
+D:\GitHub\YudianBlog\YudianBlog.Model\obj\Debug\YudianBlog.Model.csprojResolveAssemblyReference.cache
+D:\GitHub\YudianBlog\YudianBlog.Model\obj\Debug\YudianBlog.Model.dll
+D:\GitHub\YudianBlog\YudianBlog.Model\obj\Debug\YudianBlog.Model.pdb
