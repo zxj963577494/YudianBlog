@@ -14,3 +14,4 @@ D:\GitHub\YudianBlog\Yudianblog.Repository.EntityFramework\bin\Debug\Yudianblog.
 D:\GitHub\YudianBlog\Yudianblog.Repository.EntityFramework\bin\Debug\Yudianblog.Repository.EntityFramework.pdb
 D:\GitHub\YudianBlog\Yudianblog.Repository.EntityFramework\obj\Debug\Yudianblog.Repository.EntityFramework.dll
 D:\GitHub\YudianBlog\Yudianblog.Repository.EntityFramework\obj\Debug\Yudianblog.Repository.EntityFramework.pdb
+D:\GitHub\YudianBlog\Yudianblog.Repository.EntityFramework\obj\Debug\Yudianblog.Repository.EntityFramework.csprojResolveAssemblyReference.cache

@@ -17,3 +17,4 @@ D:\GitHub\YudianBlog\YudianBlog.Infrastructure\bin\Debug\ICSharpCode.SharpZipLib
 D:\GitHub\YudianBlog\YudianBlog.Infrastructure\bin\Debug\log4net.dll
 D:\GitHub\YudianBlog\YudianBlog.Infrastructure\obj\Debug\YudianBlog.Infrastructure.dll
 D:\GitHub\YudianBlog\YudianBlog.Infrastructure\obj\Debug\YudianBlog.Infrastructure.pdb
+D:\GitHub\YudianBlog\YudianBlog.Infrastructure\obj\Debug\YudianBlog.Infrastructure.csprojResolveAssemblyReference.cache

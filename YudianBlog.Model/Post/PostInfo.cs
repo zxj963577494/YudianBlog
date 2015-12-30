@@ -65,7 +65,7 @@ namespace YudianBlog.Model.Post
 
 
         /// <summary>
-        /// 文章名，varchar(200)值。这通常是用在生成permalink时，标识某篇文章的一段文本或数字，也即post slug
+        /// 文章名，这通常是用在生成permalink时，标识某篇文章的一段文本或数字，也即post slug
         /// </summary>
         public virtual string Post_name
         {
